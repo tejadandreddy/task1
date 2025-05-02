@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Peaceful Earth</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: linear-gradient(to right, #e0f7ef, #c8e6c9);
+      color: #2e4d3c;
+    }
+
+    header {
+      background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    header h1 {
+      font-size: 60px;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 5px #000;
+    }
+
+    header p {
+      font-size: 22px;
+      font-style: italic;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    nav {
+      background-color: #2e7d32;
+      text-align: center;
+      padding: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 10px 25px;
+      padding-left: 23px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      background-color: #25c738;
+      padding: 10px 25px;
+      border-radius: 25px;
+    }
+
+    .section {
+      padding: 60px 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section h2 {
+      font-size: 34px;
+      color: #1b5e20;
+      margin-bottom: 20px;
+    }
+
+    .section p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .quote-box {
+      background-color: #f1f8e9;
+      border-left: 5px solid #8bc34a;
+      padding: 20px;
+      margin-top: 30px;
+      font-style: italic;
+    }
+
+    .image-box {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .image-box img {
+        width: 80%;
+        max-width: 300px;
+        border-radius: 12px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+    .image-box img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        width: 350px;
+        border-radius: 15px;
+    }
+
+    
+    button {
+      background-color: #1db060;
+      color: white;
+      padding: 12px 25px;
+      align-items: center;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+    button:hover {
+      background-color: rgba(5, 82, 36, 0.221);
+        color:#075d1a;
+    }
+
+    footer {
+      background-color: #1b5e20;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Peaceful Earth</h1>
+    <p>Find your calm in the chaos</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Meditation</a>
+    <a href="#">Nature Walks</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="section">
+    <h2>Welcome to Tranquility</h2>
+    <p>
+      In a world full of noise, let this be your quiet place. This site is dedicated to helping you slow down,
+      breathe deeply, and reconnect with the natural rhythms of life. Whether you're walking in the woods, meditating by a river,
+      or just enjoying the wind on your face, peace is always within reach.
+    </p>
+
+    <div class="quote-box">
+      “Look deep into nature, and then you will understand everything better.” — Albert Einstein
+    </div>
+
+    <div class="image-box">
+      <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0" alt="Peaceful Nature">
+      <br><br>
+        <button onclick="showMessage()">Send a Message</button>
+        <p id="messageDisplay"></p>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Peaceful Earth 
+  </footer>
+
+<script>
+    function showMessage() {
+      const msg = prompt("Say a line for the Earth🌍:");
+      if (msg) {
+        document.getElementById("messageDisplay").innerText = "You said: " + msg;
+      }
+    }
+  </script>
+</body>
+
+</html>
